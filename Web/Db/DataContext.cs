@@ -49,6 +49,7 @@ namespace Web.Db
             configureDomain(mb);
             configureAuditing(mb);
             base.OnModelCreating(mb); //Configures the IdentityDbContext
+            City.OnModelCreating(mb);
         }
     }
 }

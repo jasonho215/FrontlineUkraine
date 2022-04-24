@@ -26,6 +26,7 @@ namespace Web.Db
 		public string Department { get; set; }
 		public int OrgTypeId { get; set; }
 		public string OrgTypeOther { get; set; }
+		public long OrgCityId { get; set; }
 		public string TownOrCity { get; set; }
 		public long? TweetId { get; set; }
 		public string AddressLineOne { get; set; }
@@ -35,6 +36,7 @@ namespace Web.Db
 		public decimal? Latitude { get; set; }
 		public decimal? Longitude { get; set; }
 
+		public virtual City OrgCity { get; set; }
 		public virtual ICollection<NeedNote> NeedNotes { get; set; }
 		public virtual ICollection<NeedPpeType> NeedPpeTypes { get; set; }
 	}
