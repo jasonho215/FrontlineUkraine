@@ -20,6 +20,7 @@ def to_model(create_model: NeedCreate) -> Need:
         orgTypeOther=create_model.org_type_other,
         organisationName=create_model.organisation_name,
         orgCityId=create_model.org_city_id,
+        orgRegCode=create_model.org_reg_code,
         email=create_model.email,
         phoneNumber=create_model.phone_number,
         contactName=create_model.contact_name,
