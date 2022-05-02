@@ -11,6 +11,7 @@ import { W3WModal } from './W3WModal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useMediaQuery } from '@mantine/hooks';
 import { tablet } from '../../utils/mantine';
+import { What3wordsAutosuggest } from '@what3words/react-components';
 
 export const W3WLocationInput: React.ForwardRefExoticComponent<TextInputProps> =
   React.forwardRef<HTMLInputElement, TextInputProps>(
@@ -25,34 +26,36 @@ export const W3WLocationInput: React.ForwardRefExoticComponent<TextInputProps> =
 
       return (
         <>
-          <TextInput
-            ref={ref}
-            {...props}
-            rightSection={
-              <>
-                <MediaQuery largerThan="md" styles={{ display: 'none' }}>
-                  <ActionIcon
-                    ref={iconBtnRef}
-                    size={props.size}
-                    onClick={openDialog}
-                  >
-                    <FontAwesomeIcon icon={['fas', 'location-crosshairs']} />
-                  </ActionIcon>
-                </MediaQuery>
+          <What3wordsAutosuggest api_key="7Q6AXN48">
+            <TextInput
+              ref={ref}
+              {...props}
+              rightSection={
+                <>
+                  <MediaQuery largerThan="md" styles={{ display: 'none' }}>
+                    <ActionIcon
+                      ref={iconBtnRef}
+                      size={props.size}
+                      onClick={openDialog}
+                    >
+                      <FontAwesomeIcon icon={['fas', 'location-crosshairs']} />
+                    </ActionIcon>
+                  </MediaQuery>
 
-                <MediaQuery smallerThan="md" styles={{ display: 'none' }}>
-                  <Button ref={btnRef} size={props.size} onClick={openDialog}>
-                    Get What3Words
-                  </Button>
-                </MediaQuery>
-              </>
-            }
-            rightSectionWidth={
-              isTablet
-                ? btnRef.current?.clientWidth
-                : iconBtnRef.current?.clientWidth
-            }
-          />
+                  <MediaQuery smallerThan="md" styles={{ display: 'none' }}>
+                    <Button ref={btnRef} size={props.size} onClick={openDialog}>
+                      Get What3Words
+                    </Button>
+                  </MediaQuery>
+                </>
+              }
+              rightSectionWidth={
+                isTablet
+                  ? btnRef.current?.clientWidth
+                  : iconBtnRef.current?.clientWidth
+              }
+            />
+          </What3wordsAutosuggest>
           <W3WModal size="full" opened={opened} onClose={closeDialog} />
         </>
       );

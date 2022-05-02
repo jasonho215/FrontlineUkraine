@@ -12,6 +12,10 @@ interface Config {
     clientID: string;
     endpoint: string;
   };
+  what3Words: {
+    endpoint: string;
+    apiKey: string;
+  }
 }
 
 export const config: Config = window.appConfig;

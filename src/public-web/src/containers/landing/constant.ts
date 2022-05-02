@@ -107,41 +107,52 @@ export const PPE_TYPE_COLOR: Record<PpeTypeEnum, string> = {
   [PpeTypeEnum.DomesticOtherThermalClothingNew]: '#FFDA00',
   [PpeTypeEnum.DomesticOtherTorches]: '#FFDA00',
   // (Non-drug) Medical Supplies - Medical equipments
-  [PpeTypeEnum.NonDrugMedicalSuppliesMedicalEquipmentAnaesthesiaMachine]: '#FFDA00',
+  [PpeTypeEnum.NonDrugMedicalSuppliesMedicalEquipmentAnaesthesiaMachine]:
+    '#FFDA00',
   [PpeTypeEnum.NonDrugMedicalSuppliesMedicalEquipmentCapnometer]: '#FFDA00',
   [PpeTypeEnum.NonDrugMedicalSuppliesMedicalEquipmentDefibrillator]: '#FFDA00',
   [PpeTypeEnum.NonDrugMedicalSuppliesMedicalEquipmentDermatome]: '#FFDA00',
   [PpeTypeEnum.NonDrugMedicalSuppliesMedicalEquipmentECGRecorder]: '#FFDA00',
-  [PpeTypeEnum.NonDrugMedicalSuppliesMedicalEquipmentExaminationLightLed]: '#FFDA00',
+  [PpeTypeEnum.NonDrugMedicalSuppliesMedicalEquipmentExaminationLightLed]:
+    '#FFDA00',
   [PpeTypeEnum.NonDrugMedicalSuppliesMedicalEquipmentFootOperatedSuctionPump]:
     '#FFDA00',
   [PpeTypeEnum.NonDrugMedicalSuppliesMedicalEquipmentInfusionPump]: '#FFDA00',
-  [PpeTypeEnum.NonDrugMedicalSuppliesMedicalEquipmentLegTractionSplint]: '#FFDA00',
+  [PpeTypeEnum.NonDrugMedicalSuppliesMedicalEquipmentLegTractionSplint]:
+    '#FFDA00',
   [PpeTypeEnum.NonDrugMedicalSuppliesMedicalEquipmentMobileUltrasoundScanner]:
     '#FFDA00',
   [PpeTypeEnum.NonDrugMedicalSuppliesMedicalEquipmentOther]: '#FFDA00',
   [PpeTypeEnum.NonDrugMedicalSuppliesMedicalEquipmentPatientMonitor]: '#FFDA00',
-  [PpeTypeEnum.NonDrugMedicalSuppliesMedicalEquipmentPatientVentilator]: '#FFDA00',
-  [PpeTypeEnum.NonDrugMedicalSuppliesMedicalEquipmentSelfInflatingBagSet]: '#FFDA00',
+  [PpeTypeEnum.NonDrugMedicalSuppliesMedicalEquipmentPatientVentilator]:
+    '#FFDA00',
+  [PpeTypeEnum.NonDrugMedicalSuppliesMedicalEquipmentSelfInflatingBagSet]:
+    '#FFDA00',
   [PpeTypeEnum.NonDrugMedicalSuppliesMedicalEquipmentSurgicalDrill]: '#FFDA00',
   [PpeTypeEnum.NonDrugMedicalSuppliesMedicalEquipmentSyringePump]: '#FFDA00',
   [PpeTypeEnum.NonDrugMedicalSuppliesMedicalEquipmentXRayUnit]: '#FFDA00',
   // (Non-drug) Medical Supplies - Consumables
-  [PpeTypeEnum.NonDrugMedicalSuppliesConsumablesCentralVenousCatheters]: '#FFDA00',
-  [PpeTypeEnum.NonDrugMedicalSuppliesConsumablesDrainThoracicInsertionSet]: '#FFDA00',
+  [PpeTypeEnum.NonDrugMedicalSuppliesConsumablesCentralVenousCatheters]:
+    '#FFDA00',
+  [PpeTypeEnum.NonDrugMedicalSuppliesConsumablesDrainThoracicInsertionSet]:
+    '#FFDA00',
   [PpeTypeEnum.NonDrugMedicalSuppliesConsumablesFirstAidKits]: '#FFDA00',
   [PpeTypeEnum.NonDrugMedicalSuppliesConsumablesGlucometers]: '#FFDA00',
   [PpeTypeEnum.NonDrugMedicalSuppliesConsumablesInsulinSyringes]: '#FFDA00',
   [PpeTypeEnum.NonDrugMedicalSuppliesConsumablesMedicalTourniquets]: '#FFDA00',
   [PpeTypeEnum.NonDrugMedicalSuppliesConsumablesOther]: '#FFDA00',
   [PpeTypeEnum.NonDrugMedicalSuppliesConsumablesSetInfusionAdult]: '#FFDA00',
-  [PpeTypeEnum.NonDrugMedicalSuppliesConsumablesSetInfusionPaediatric]: '#FFDA00',
-  [PpeTypeEnum.NonDrugMedicalSuppliesConsumablesSetIntraosseousInfusionKit]: '#FFDA00',
-  [PpeTypeEnum.NonDrugMedicalSuppliesConsumablesSyringePensDiabetics]: '#FFDA00',
+  [PpeTypeEnum.NonDrugMedicalSuppliesConsumablesSetInfusionPaediatric]:
+    '#FFDA00',
+  [PpeTypeEnum.NonDrugMedicalSuppliesConsumablesSetIntraosseousInfusionKit]:
+    '#FFDA00',
+  [PpeTypeEnum.NonDrugMedicalSuppliesConsumablesSyringePensDiabetics]:
+    '#FFDA00',
   [PpeTypeEnum.NonDrugMedicalSuppliesConsumablesViralBacteriaFilter]: '#FFDA00',
   [PpeTypeEnum.NonDrugMedicalSuppliesConsumablesXRayCartridges]: '#FFDA00',
   // (Non-drug) Medical Supplies - Surgical instruments and fixators
-  [PpeTypeEnum.NonDrugMedicalSuppliesSurgicalInstrumentsAndFixatorsOther]: '#FFDA00',
+  [PpeTypeEnum.NonDrugMedicalSuppliesSurgicalInstrumentsAndFixatorsOther]:
+    '#FFDA00',
   [PpeTypeEnum.NonDrugMedicalSuppliesSurgicalInstrumentsAndFixatorsSetExternalFixationLargeFixatorsAndInstruments]:
     '#FFDA00',
   [PpeTypeEnum.NonDrugMedicalSuppliesSurgicalInstrumentsAndFixatorsSetGeneralSurgeryInstrumentsBasicSurgery]:

@@ -13,6 +13,7 @@ import { LocaleProvider } from './locale/LocaleProvider';
 import { AuthgearProvider } from './contexts/AuthgearContext';
 import { FLAppShell } from './components/FLAppShell';
 import { resolveDefaultLocale } from './locale/resolveDefaultLocale';
+import { What3WordsContextProvider } from './contexts/What3WordsContext';
 
 // @ts-expect-error
 const contentfulClient = new ContentfulClient({
@@ -63,13 +64,15 @@ const InnerFLApp: React.FC = () => {
   return (
     <ContentfulProvider client={contentfulClient}>
       <AuthgearProvider>
-        <APIContextProvider>
-          <ServiceProvider windowImpl={window}>
-            <LocaleProvider defaultLocale={resolveDefaultLocale(window)}>
-              <FLAppShell>{Match}</FLAppShell>
-            </LocaleProvider>
-          </ServiceProvider>
-        </APIContextProvider>
+        <What3WordsContextProvider>
+          <APIContextProvider>
+            <ServiceProvider windowImpl={window}>
+              <LocaleProvider defaultLocale={resolveDefaultLocale(window)}>
+                <FLAppShell>{Match}</FLAppShell>
+              </LocaleProvider>
+            </ServiceProvider>
+          </APIContextProvider>
+        </What3WordsContextProvider>
       </AuthgearProvider>
     </ContentfulProvider>
   );
